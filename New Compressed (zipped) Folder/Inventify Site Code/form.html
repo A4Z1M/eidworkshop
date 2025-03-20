@@ -1,0 +1,222 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Contact Form</title>
+    <style>
+       @charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'BebasRegular';
+    src: url('fonts/BEBAS___-webfont.eot');
+    src: url('fonts/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BEBAS___-webfont.woff') format('woff'),
+         url('fonts/BEBAS___-webfont.ttf') format('truetype'),
+         url('fonts/BEBAS___-webfont.svg#BebasRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font-size:100%;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:#fff;
+    background: black;
+}
+
+.body {
+	width:576px;
+	margin:0 auto;
+	display:block;
+    
+}
+
+h1 {
+	width:498px;
+	height:64px;
+	background:url(images/h1-bg.jpg);
+	color:#fff;
+	font-family:bebas;
+	padding:17px 0px 0px 78px;
+	letter-spacing:1px;
+	font-size:2.2em;
+	margin:0 auto;
+}
+
+form {
+	width:459px;
+	margin:0 auto;
+}
+
+label {
+	display:block;
+	margin-top:20px;
+	letter-spacing:2px;
+}
+
+input, textarea {
+	width:439px;
+	height:27px;
+	background:#efefef;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border:1px solid #dedede;
+	padding:10px;
+	margin-top:3px;
+	font-size:0.9em;
+	color:#3a3a3a;
+}
+
+	input:focus, textarea:focus {
+		border:1px solid #97d6eb;
+	}
+
+textarea {
+	height:213px;
+	font-family:Arial, Helvetica, sans-serif;
+	background:url(images/textarea-bg.jpg) right no-repeat #efefef;
+}
+
+#submit {
+	background:#7937f2ff;
+	width:127px;
+	height:38px;
+	border:none;
+	margin-top:20px;
+	cursor:pointer;
+    color: #FFF ;
+}
+
+	#submit:hover {
+		opacity:0.9;
+	}
+
+footer a img {
+	border:none;
+	float:right;
+	margin:0px 59px 40px 0px;
+}
+    </style>
+</head>
+
+
+
+<body>
+
+    <header class="body">
+    </header>
+
+    <section class="body">
+        <form  
+        action="https://formspree.io/f/xzbqdpvz"
+        method="POST">
+<label for="education">Level of Education:</label>
+<select name="education" id="education">
+  <option value="attending_highschool">Attending Highschool</option>
+  <option value="highschool_graduate">Highschool Graduate</option>
+  <option value="attending_or_graduated_from_university">Attending or Graduated from University</option>
+  <option value="other">Other:</option>
+</select>
+<br>
+<br>
+<label for="iot_knowledge">How much knowledge do you have in IoT, Robotics, Programing ect?</label>
+<select name="iot_knowledge" id="iot_knowledge">
+
+  <option value="lots_of_knowledge">Lots of knowledge, I studied for 1+ years and want to refine my skills</option>
+  <option value="some_knowledge">Some knowledge, I understand basics concepts but need help with the more advanced ones</option>
+  <option value="little_knowledge">Little knowledge, I know what IoT is and I am ready to start learning</option>
+  <option value="no_knowledge">No knowledge, I have never heard of IoT and I want to learn more</option>
+</select>
+<br>
+<br>
+<label for="hands_on_experience">How much hands-on experience do you have actually doing IoT, Robotics, Programming ect?</label>
+<select name="hands_on_experience" id="hands_on_experience">
+
+  <option value="large_portfolio">I have worked on many projects and have a large portfolio</option>
+  <option value="small_portfolio">I have worked on a few projects and want to grow my portfolio</option>
+  <option value="no_experience">I have never worked on any projects and I want to start now</option>
+</select>
+<br>
+<br>
+<label for="challenges">Are there any specific challenges or barriers you anticipate facing as you learn about IoT and Robotics?</label>
+
+<textarea name="challenges" id="challenges"></textarea>
+<br>
+<br>
+<label for="else_to_know">Is there anything else you would like us to know before the course begins?</label>
+
+<textarea name="else_to_know" id="else_to_know"></textarea>
+<br>
+<br>
+<label for="interests">What specific aspects of IoT and Robotics are you most interested in learning?</label>
+<select name="interests" id="interests">
+
+  <option value="smart_home_automation">Smart home automation</option>
+  <option value="industrial_iot">Industrial IoT</option>
+  <option value="robotics_and_automation">Robotics and automation</option>
+  <option value="other">Other:</option>
+</select>
+<br>
+<br>
+<label for="motivations2">What are your primary motivations for joining our IoT and Robotics group?</label>
+  <br>
+  <input type="checkbox" name="motivations2" value="Increasing my knowledge of IoT, Robotics, and Programming"> Increasing my knowledge of IoT, Robotics, and Programming
+  <br>
+  <input type="checkbox" name="motivations2" value="Gaining hands-on experience in IoT, Robotics, and Programming"> Gaining hands-on experience in IoT, Robotics, and Programming
+  <br>
+  <input type="checkbox" name="motivations2" value="Joining a community of like-minded individuals to learn, grow, and collaborate on projects."> Joining a community of like-minded individuals to learn, grow, and collaborate on projects.
+  <br><br>
+
+  <label for="location">Where do you live? (Optional)</label>
+  <br>
+  <input type="radio" name="location" value="Au Dhabi"> Au Dhabi
+  <br>
+  <input type="radio" name="location" value="Dubai"> Dubai
+  <br>
+  <input type="radio" name="location" value="Sharjah"> Sharjah
+  <br>
+  <input type="radio" name="location" value="Ajman"> Ajman
+  <br>
+  <input type="radio" name="location" value="Ras Al Khaimah"> Ras Al Khaimah
+  <br>
+  <input type="radio" name="location" value="Umm Al Quwain"> Umm Al Quwain
+  <br>
+  <input type="radio" name="location" value="Fujairah"> Fujairah
+  <br>
+  <input type="text" name="location" placeholder="Other">
+  <br><br>
+
+  <label for="finding">How did you find Inventify.club?</label>
+  <br>
+  <input type="checkbox" name="finding" value="Instagram"> Instagram
+  <br>
+  <input type="checkbox" name="finding" value="Facebook"> Facebook
+  <br>
+  <input type="checkbox" name="finding" value="Google"> Google
+  <br>
+  <input type="checkbox" name="finding" value="Flyers"> Flyers
+  <br>
+  <input type="checkbox" name="finding" value="Referred by friend or family"> Referred by friend or family
+  <br>
+  <input type="text" name="finding" placeholder="Other">
+  <br><br>
+
+  <label for="email">Email (Receive a video introduction to our course)</label>
+  <br>
+  <input type="email" name="email" id="email">
+  <br><br>
+
+  <input type="submit" value="Submit">
+</form>
+    </section>
+
+    <footer class="body">
+    </footer>
+
+</body>
+
+
+</html>
