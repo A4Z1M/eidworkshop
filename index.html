@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Inventorz.AI </title>
+	<meta name="description" content="Become an AI & Robotics whiz! Hands-on course for complete beginners. No prior knowledge needed. Build robots & explore AI through fun, practical projects.">
+	<meta name="keywords" content="Robotics and AI Course">
+	<meta name="author" content="rajesh-doot">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="theme-color" content="#2e2a8f">
+	<!--website-favicon-->
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="manifest" href="site.webmanifest">
+	<!--plugin-css-->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/plugin.min.css" rel="stylesheet">
+	<link href="css/all.min.css" rel="stylesheet">
+	<!-- template-style-->
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+		.maincolour {
+			background: linear-gradient(45deg, #fbcb50 0%, #d87297 50%, #e36658 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+		@keyframes fadeInDown {
+			from {
+				opacity: 0;
+				transform: translateY(-20px);
+			}
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+		@keyframes fadeInLeft {
+			from {
+				opacity: 0;
+				transform: translateX(-20px);
+			}
+			to {
+				opacity: 1;
+				transform: translateX(0);
+			}
+		}
+		@keyframes fadeInUp {
+			from {
+				opacity: 0;
+				transform: translateY(20px);
+			}
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+	</style>
+</head>
+
+<body class="active-dark">
+	<!--Start Preloader -->
+	<div class="onloadpage" id="page_loader">
+		<div class="pre-content">
+			<div class="logo-pre"><img src="images/inventify.png" alt="Logo" class="img-fluid" /></div>
+			<div class="pre-text- text-radius text-light text-animation bg-b">Inventorz.AI</div>
+		</div>
+	</div>
+	<!--End Preloader -->
+	<!--Start Header -->
+	<header class="nav-bg-b main-header navfix fixed-top menu-dark my-my">
+		<div class="container-fluid m-pad">
+			<div class="menu-header">
+				<div class="dsk-logo"><a id="nav-logo-id-my" class="nav-brand nav-logo-my" href="index.html">
+						<img src="images/inventify.png" alt="Logo" class="mega-white-logo" style="width:auto; height: 60px" />
+						<span class="nav-text-logo-my change-color-my">Inventorz.AI</span>
+					</a>
+				</div>
+				<ul class="nav-options-my">
+					<li><a href="index.html#home" class="menu-links change-color-my">Home</a></li>
+					<li><a href="index.html#about" class="menu-links change-color-my">About</a></li>
+					<li><a href="index.html#benefits" class="menu-links change-color-my">Benefits</a></li>
+					<li><a href="index.html#why-us" class="menu-links change-color-my">Why Us</a></li>
+					<li><a href="index.html#achievements" class="menu-links change-color-my">Achievements</a></li>
+					<li><a href="shop-details.html" class="menu-links change-color-my">KITs</a></li>
+				</ul>
+
+				<div class="navbar-menus-my">
+					<div class="custom-nav" role="navigation">
+						<ul class="nav-list onepge">
+							<li><a href="#" class="btn-round- trngl btn-br bg-btn btshad-b1" data-toggle="modal"
+									data-target="#menu-popup"><i class="fas fa-envelope-open-text"></i></a>
+							</li>
+							<li class="contact-show"><a href="#" class="btn-round- trngl btn-br bg-btn"><i
+										class="fas fa-phone-alt"></i></a>
+								<div class="contact-inquiry">
+									<div class="contact-info-">
+										<div class="contct-heading">Contact Us</div>
+										<div class="inquiry-card-nn hrbg">
+											<div class="title-inq-c"></div>
+											<ul>
+												<li class="mb0"><img src="images/flags/ae.svg" alt="us office"
+														class="flags-size"> <a href="tel:971 55 566
+														8121">+971 55 566 8121</a> English, Arabic, Urdu</li>
+											</ul>
+											<ul>
+												<li class="mb0"><img src="images/flags/us.svg" alt="us office"
+														class="flags-size"> <a href="tel:971 55 566 8121">+1 (614)
+														592-1372</a> English, Arabic</li>
+											</ul>
+											<ul>
+												<li class="mb0"><img src="images/flags/ae.svg" alt="us office"
+														class="flags-size"> <a href="tel:971 55 566 8121">+971 50 449
+														6595</a> English, Arabic</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li><a href="https://labs.inventify.ae/collections/1333384"
+									class="btn-br bg-btn5 btshad-b2 lnk nav-cta-my" data-target="#menu-popup">Level Up
+									Your
+									Learning <span class="circle"></span></a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="mobile-menu2">
+						<ul class="mob-nav2">
+							<li class="navm-"> <a class="toggle" href="#"><span></span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--Mobile Menu-->
+			<nav id="main-nav" class="main-nav-my">
+				<ul class="first-nav">
+					<li><a href="/index.html#home" class="menu-links">Home</a></li>
+					<li><a href="/index.html#about" class="menu-links">About</a></li>
+					<li><a href="/index.html#benefits" class="menu-links">Benefits</a></li>
+					<li><a href="/index.html#why-us" class="menu-links">Why Us</a></li>
+					<li><a href="/index.html#achievements" class="menu-links">Achievements</a></li>
+					<li><a href="/shop-details.html" class="menu-links">KITs</a></li>
+				</ul>
+				<ul class="bottom-nav">
+					<li class="prb">
+						<a href="tel:+971 55 566 8121r">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384">
+								<path
+									d="M353.188,252.052c-23.51,0-46.594-3.677-68.469-10.906c-10.719-3.656-23.896-0.302-30.438,6.417l-43.177,32.594
+								c-50.073-26.729-80.917-57.563-107.281-107.26l31.635-42.052c8.219-8.208,11.167-20.198,7.635-31.448
+								c-7.26-21.99-10.948-45.063-10.948-68.583C132.146,13.823,118.323,0,101.333,0H30.813C13.823,0,0,13.823,0,30.813
+								C0,225.563,158.438,384,353.188,384c16.99,0,30.813-13.823,30.813-30.813v-70.323C384,265.875,370.177,252.052,353.188,252.052z" />
+							</svg>
+						</a>
+					</li>
+					<li class="prb">
+						<a href="mailto:info@inventorz.ai">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+								<path
+									d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+								<path d="M0 0h24v24H0z" fill="none" />
+							</svg>
+						</a>
+					</li>
+					<li class="prb">
+						<a href="skype:inventorz.ai.company?call">
+							<svg enable-background="new 0 0 24 24" height="18" viewBox="0 0 24 24" width="18"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="m23.309 14.547c1.738-7.81-5.104-14.905-13.139-13.543-4.362-2.707-10.17.352-10.17 5.542 0 1.207.333 2.337.912 3.311-1.615 7.828 5.283 14.821 13.311 13.366 5.675 3.001 11.946-2.984 9.086-8.676zm-7.638 4.71c-2.108.867-5.577.872-7.676-.227-2.993-1.596-3.525-5.189-.943-5.189 1.946 0 1.33 2.269 3.295 3.194.902.417 2.841.46 3.968-.3 1.113-.745 1.011-1.917.406-2.477-1.603-1.48-6.19-.892-8.287-3.483-.911-1.124-1.083-3.107.037-4.545 1.952-2.512 7.68-2.665 10.143-.768 2.274 1.76 1.66 4.096-.175 4.096-2.207 0-1.047-2.888-4.61-2.888-2.583 0-3.599 1.837-1.78 2.731 2.466 1.225 8.75.816 8.75 5.603-.005 1.992-1.226 3.477-3.128 4.253z" />
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!--Mobile contact-->
+	<div class="popup-modal1">
+		<div class="modal" id="menu-popup">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div class="common-heading">
+							<h4 class="mt0 mb0">Write a Message</h4>
+						</div>
+						<button type="button" class="closes" data-dismiss="modal">&times;</button>
+					</div>
+					<!-- Modal body -->
+					<div class="modal-body">
+						<div class="form-block fdgn2 mt10 mb10">
+							<form action="https://learn.inventorz.ai/" method="post" name="feedback-form">
+								<div class="fieldsets row">
+									<div class="col-md-12"><input type="text" placeholder="Full Name" name="name"></div>
+									<div class="col-md-12"><input type="email" placeholder="Email Address" name="email">
+									</div>
+									<div class="col-md-12"><input type="number" placeholder="Contact Number"
+											name="phone"></div>
+									<div class="col-md-12"><input type="text" placeholder="Subject" name="subject">
+									</div>
+									<div class="col-md-12"><textarea placeholder="Message" name="message"></textarea>
+									</div>
+								</div>
+								<div class="fieldsets mt20 pb20">
+									<button type="submit" name="submit" class="lnk btn-main bg-btn"
+										data-dismiss="modal">Submit <i class="fas fa-chevron-right fa-icon"></i><span
+											class="circle"></span></button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Mobile contact-->
+	<div class="popup-modal1">
+		<div class="modal" id="registrationModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div class="common-heading">
+							<h4 class="mt0 mb0">Registration Form</h4>
+						</div>
+						<button type="button" class="closes" data-dismiss="modal">&times;</button>
+					</div>
+					<!-- Modal body -->
+					<div class="modal-body">
+						<div class="form-block fdgn2 mt10 mb10">
+							<form action="https://learn.inventorz.ai/" method="post" name="registration-form">
+								<div class="fieldsets row">
+									<div class="col-md-6"><input type="text" placeholder="First Name" name="firstName" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px;"></div>
+									<div class="col-md-6"><input type="text" placeholder="Last Name" name="lastName" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px;"></div>
+									<div class="col-md-12"><input type="email" placeholder="Email Address" name="email" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px;"></div>
+									<div class="col-md-12"><input type="tel" placeholder="Phone Number" name="phone" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px;"></div>
+								</div>
+								<div class="fieldsets mt40">
+									<button type="submit" name="submit" class="lnk btn-main bg-btn" style="font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;">Submit <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Mobile contact-->
+
+	<!--End Header -->
+	<!--Start Hero-->
+	<section class="hero-section hero-digital-agency-1 branding-agency">
+		<div class="text-block niwax" data-rellax-speed="-3">
+			<div class="container">
+				<div class="row justify-content-start">
+					<div class="col-lg-6">
+						<div class="hero-content-box" style="background: transparent; padding: 0; border-radius: 0;">
+							<div class="header-heading" style="text-align: left;">
+								<h1>
+									<span class="free-text maincolour" style="font-size: 4rem; font-weight: bold; animation: fadeInDown 1s ease-out;">FREE</span>
+									<span class="small-text" style="color: white; animation: fadeInDown 1s ease-out 0.2s; animation-fill-mode: both;">AI & ROBOTICS</span>
+									<span class="small-text" style="color: white; animation: fadeInDown 1s ease-out 0.4s; animation-fill-mode: both;">WORKSHOP</span>
+								</h1>
+								<p style="text-align: left; color: white; animation: fadeInLeft 1s ease-out 0.6s; animation-fill-mode: both;">50 seats left! book your spot now</p>
+								<div class="countdown-timer wow fadeInUp" data-wow-delay=".5s" style="justify-content: flex-start; background: rgba(128, 128, 128, 0.3); padding: 20px; border-radius: 12px; gap: 20px; animation: fadeInUp 1s ease-out 0.8s; animation-fill-mode: both;">
+									<div class="countdown-item">
+										<span id="days" style="color: white; font-size: 2.5rem; font-weight: bold;">00</span>
+										<span style="color: white; font-size: 1rem; display: block;">Days</span>
+									</div>
+									<div class="countdown-item">
+										<span id="hours" style="color: white; font-size: 2.5rem; font-weight: bold;">00</span>
+										<span style="color: white; font-size: 1rem; display: block;">Hours</span>
+									</div>
+									<div class="countdown-item">
+										<span id="minutes" style="color: white; font-size: 2.5rem; font-weight: bold;">00</span>
+										<span style="color: white; font-size: 1rem; display: block;">Minutes</span>
+									</div>
+									<div class="countdown-item">
+										<span id="seconds" style="color: white; font-size: 2.5rem; font-weight: bold;">00</span>
+										<span style="color: white; font-size: 1rem; display: block;">Seconds</span>
+									</div>
+								</div>
+								<div style="display: flex; gap: 15px; justify-content: flex-start; animation: fadeInUp 1s ease-out 1s; animation-fill-mode: both;">
+									<a href="#" data-toggle="modal" data-target="#registrationModal"
+										class="btn-main bg-btn4 lnk wow fadeInUp" data-wow-delay=".6s" style="font-size: 14px; padding: 0px 20px; line-height: 36px; background: linear-gradient(45deg, #fbcb50 0%, #d87297 50%, #e36658 100%); font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;">SECURE YOUR SPOT<i
+											class="fas fa-chevron-right fa-icon" style="vertical-align: middle; line-height: 1;"></i><span class="circle"></span></a>
+									<div style="display: flex; align-items: center; color: white; font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;">
+										<img src="images/icons/live-streaming.ico" alt="stream" style="width: 32px; height: 32px; margin-right: 12px;">
+										<span style="font-weight: bold; letter-spacing: 1px;">30/03/2025</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="form-block fdgn2 mt10 mb10" style="background: white; padding: 20px; border-radius: 8px; transform-style: preserve-3d; transition: transform 0.3s ease-out;" id="registrationForm">
+							<h3 class="text-center mb30" style="color: #000;">Registration Form</h3>
+							<form action="https://learn.inventorz.ai/" method="post" name="registration-form">
+								<div class="fieldsets row">
+									<div class="col-md-6"><input type="text" placeholder="First Name" name="firstName" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px; background: white;"></div>
+									<div class="col-md-6"><input type="text" placeholder="Last Name" name="lastName" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px; background: white;"></div>
+									<div class="col-md-12"><input type="email" placeholder="Email Address" name="email" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px; background: white;"></div>
+									<div class="col-md-12"><input type="tel" placeholder="Phone Number" name="phone" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px; background: white;"></div>
+								</div>
+								<div class="fieldsets mt40">
+									<button type="submit" name="submit" class="lnk btn-main bg-btn" style="font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;">Submit <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--End Hero-->
+	<!--Start Pricing-->
+	<section class="block-a1 pad-tb">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8">
+					<div class="common-heading ptag">
+						<span>Pricing</span>
+						<h2>Course Pricing</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-4 col-md-6">
+					<div class="pricing-table mt60" style="background: linear-gradient(145deg, #000000, #1a1a1a); min-height: 400px; padding: 2rem;">
+						<div class="inner-table">
+							<span class="title" style="color: #fff; font-size: 2rem; margin-bottom: 2rem; font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;">Monthly</span>
+							<h2 style="text-align: center; color: #fff; margin: 3rem 0; font-size: 3rem; font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;">
+								<sup style="font-size: 0.5em;">AED</sup>400
+							</h2>
+							<p class="duration" style="color: #fff; font-size: 1.5rem; font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;">Per Month</p>
+						</div>
+						<a href="https://labs.inventify.ae/collections/1333384" class="btn-main bg-btn lnk" style="margin-top: 2rem; font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;">Get Started
+							<i class="fas fa-chevron-right fa-icon"></i>
+							<span class="circle"></span></a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="pricing-table mt60" style="background: linear-gradient(145deg, #000000, #1a1a1a); min-height: 400px; padding: 2rem;">
+						<div class="inner-table">
+							<span class="title" style="color: #fff; font-size: 2rem; margin-bottom: 2rem; font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;">Quarterly</span>
+							<h2 style="text-align: center; color: #fff; margin: 3rem 0; font-size: 3rem; font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;">
+								<sup style="font-size: 0.5em;">AED</sup>1000
+							</h2>
+							<p class="duration" style="color: #fff; font-size: 1.5rem; font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;">Every 3 Months</p>
+						</div>
+						<a href="https://labs.inventify.ae/collections/1333384" class="btn-main bg-btn lnk" style="margin-top: 2rem; font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;">Get Started
+							<i class="fas fa-chevron-right fa-icon"></i>
+							<span class="circle"></span></a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="pricing-table mt60" style="background: linear-gradient(145deg, #000000, #1a1a1a); min-height: 400px; padding: 2rem;">
+						<div class="inner-table">
+							<span class="title" style="color: #fff; font-size: 2rem; margin-bottom: 2rem; font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;">Bi-yearly</span>
+							<h2 style="text-align: center; color: #fff; margin: 3rem 0; font-size: 3rem; font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;">
+								<sup style="font-size: 0.5em;">AED</sup>1600
+							</h2>
+							<p class="duration" style="color: #fff; font-size: 1.5rem; font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;">Every 6 Months</p>
+						</div>
+						<a href="https://labs.inventify.ae/collections/1333384" class="btn-main bg-btn lnk" style="margin-top: 2rem; font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;">Get Started
+							<i class="fas fa-chevron-right fa-icon"></i>
+							<span class="circle"></span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--End pricing-->
+	<!--Start About-->
+	<section class="about-sec-rpb pad-tb" id="about">
+		<div class="container">
+			<div class="row justify-content-center text-center">
+				<div class="col-lg-10">
+					<div class="common-heading">
+						<span><!----></span>
+						<h1 class="mb30"><span class="text-second"><!----></span> OUR METHODOLOGY</h1>
+						<p><!----><span class="text-radius text-light text-animation bg-b">Inventorz.AI</span>is all
+							about revolutionizing education of today's world. We're passionate about
+							empowering young minds with our "learn by doing" method. Our courses and kits are designed
+							to bridge the gap between theory and practice. No more textbooks and lectures—just real
+							projects and practical skills that matters.
+						</p>
+						<!--<h3 class="mt30 mb30">Big Ideas, creative people, new technology.</h3>
+<p>Lorem Ipsum is <span class="text-bold">simply dummy</span> text of the printing and typesetting industry. Lorem Ipsum has been the industry's specimen book. Lorem Ipsum is simply dummy text of the <span class="text-bold">printing</span> and typesetting industry. <span class="text-bold">Lorem Ipsum is simply</span> dummy text of the printing and typesetting industry. is simply dummy text of the printing and typesetting industry. </p>-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--End About-->
+	<!--Start Service-->
+	<section class="service-section-prb pad-tb" id="benefits">
+		<div class="container">
+			<div class="row upset">
+				<div data-tilt data-tilt-max="5" data-tilt-speed="1000" class="col-lg-6-cus wow fadeInUp"
+					data-wow-delay=".2s">
+					<div class="service-sec-brp srvc-bg-nx bg-gradient13 text-w">
+						<h4 class="mb10">Navigating the Future of Tech</h4>
+						<p>Embark on a journey with Inventorz.AI. From foundational skills to advanced projects, we guide
+							every step towards tech mastery.</p>
+						<a href="https://labs.inventify.ae/collections/1333384" class="mt20 link-prb">Join Now<i
+								class="fas fa-chevron-right"></i></a>
+					</div>
+				</div>
+
+				<div data-tilt data-tilt-max="5" data-tilt-speed="1000" class="col-lg-3-cus wow fadeInUp"
+					data-wow-delay=".4s">
+					<div class="service-sec-list srvc-bg-nx srcl1">
+						<img src="images/icons/development.svg" alt="service">
+						<h5 class="mb10">Personalized Mentorship</h5>
+
+						<p>Unlock unprecedented growth with mentorship tailored to each student's pace and interests.
+							Dive deep into diverse domains, like cutting-edge robotics.</p>
+					</div>
+				</div>
+				</a>
+
+				<div data-tilt data-tilt-max="5" data-tilt-speed="1000" class="col-lg-3-cus wow fadeInUp"
+					data-wow-delay=".6s">
+					<div class="service-sec-list srvc-bg-nx srcl2">
+						<img src="images/icons/ecommerce.svg" alt="service">
+						<h5 class="mb10">Community Access</h5>
+
+						<p>Become part of a thriving network. Engage with peers, share ideas, and collaborate on
+							ventures. With access to a diverse community, endless opportunities await</p>
+					</div>
+				</div>
+				</a>
+				<div data-tilt data-tilt-max="5" data-tilt-speed="1000" class="col-lg-3-cus mt30- wow fadeInUp"
+					data-wow-delay=".8s">
+					<div class="service-sec-list srvc-bg-nx srcl3">
+						<img src="images/icons/app.svg" alt="service">
+						<h5 class="mb10">Electronics Starter Kits</h5>
+
+						<p>Discover robotics and IoT with our tailored electronics kit. Packed with lots of essential
+							components. Whether you're making a robot or building smart devices.</p>
+					</div>
+				</div>
+				</a>
+				<div data-tilt data-tilt-max="5" data-tilt-speed="1000" class="col-lg-3-cus mt30- wow fadeInUp"
+					data-wow-delay="1s">
+					<div class="service-sec-list srvc-bg-nx srcl4">
+						<img src="images/icons/tech.svg" alt="service">
+						<h5 class="mb10">Immersive Journey</h5>
+						<p>Embark on a transformative experience. At Inventorz.AI, it's not just about learning; it's about
+							living the tech. Our modules immerse students in real-world scenarios, preparing them for
+							the future.</p>
+					</div>
+				</div>
+
+				<div data-tilt data-tilt-max="5" data-tilt-speed="1000" class="col-lg-6-cus mt30- wow fadeInUp"
+					data-wow-delay="1.2s">
+					<div class="service-sec-list srvc-bg-nx srcl5">
+						<img src="images/icons/seo.svg" alt="service">
+						<h5 class="mb10">Hands-on Projects</h5>
+
+						<p>As you progress through your joumey, you wont be passively consuming content; you'll be
+							actively involved in solving challenges that put your newly acquired skills to the test with
+							hands-on projects. Get your hands dirty, spark your creativity, and build your path to
+							innovation.</p>
+					</div>
+				</div>
+			</div>
+			<div class="-cta-btn mt70">
+				<div class="free-cta-title v-center zoomInDown wow" data-wow-delay="1.4s">
+					<p>Begin your <span>Journey</span> Now</p>
+					<a href="https://labs.inventify.ae/collections/1333384" class="btn-main bg-btn2 lnk">Enroll Now<i
+							class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--End Service-->
+	<!--Start Projects-->
+	<section class="service-block pad-tb light-dark">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8">
+					<div class="common-heading ptag">
+						<span>Syllabus</span>
+						<h2>Timeline of Projects</h2>
+						<p>The Projects our students will be building throughout the Course</p>
+					</div>
+				</div>
+			</div>
+			<div class="row upset justify-content-center mt60">
+				<div class="col-lg-4 v-center order1">
+					<div class="image-block1">
+						<img src="images/process/process-1.jpg" alt="Process" class="img-fluid" />
+					</div>
+				</div>
+				<div class="col-lg-7 v-center order2">
+					<div class="ps-block">
+						<span>1</span>
+						<h3>Build Your Own Traffic Signal!</h3>
+						<p>Imagine the pride of building a traffic light with flashing LEDs, buttons, and even some
+							coding magic! No tech experience needed – we'll guide them every step of the way.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row upset justify-content-center mt60">
+				<div class="col-lg-7 v-center order2">
+					<div class="ps-block">
+						<span>2</span>
+						<h3>Smart Plant Care System</h3>
+						<p>Kids will build an automated plant watering system that monitors soil moisture levels. This
+							clever system uses sensors and a pump, ensuring plants always get the perfect amount of
+							water – no more guesswork!</p>
+					</div>
+				</div>
+				<div class="col-lg-4 v-center order1">
+					<div class="image-block1">
+						<img src="images/process/process-2.jpg" alt="Process" class="img-fluid" />
+					</div>
+				</div>
+			</div>
+			<div class="row upset justify-content-center mt60">
+				<div class="col-lg-4 v-center order1">
+					<div class="image-block1">
+						<img src="images/process/process-3.jpg" alt="Process" class="img-fluid" />
+					</div>
+				</div>
+				<div class="col-lg-7 v-center order2">
+					<div class="ps-block">
+						<span>3</span>
+						<h3>Smart Home Security System</h3>
+						<p>Kids will create a mini security system with motion sensors, LED indicators, and even a buzzer alarm! They'll learn about sensors, programming logic, and how to keep their stuff safe.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row upset justify-content-center mt60">
+				<div class="col-lg-7 v-center order2">
+					<div class="ps-block">
+						<span>4</span>
+						<h3>Weather Station with Display</h3>
+						<p>Kids will build their own weather station that shows temperature and humidity on an LCD screen. They'll learn about sensors, data display, and how to make useful gadgets!</p>
+					</div>
+				</div>
+				<div class="col-lg-4 v-center order1">
+					<div class="image-block1">
+						<img src="images/process/process-4.jpg" alt="Process" class="img-fluid" />
+					</div>
+				</div>
+			</div>
+			<div class="row upset justify-content-center mt60">
+				<div class="col-lg-4 v-center order1">
+					<div class="image-block1">
+						<img src="images/process/process-5.jpg" alt="Process" class="img-fluid" />
+					</div>
+				</div>
+				<div class="col-lg-7 v-center order2">
+					<div class="ps-block">
+						<span>5</span>
+						<h3>Line Following Robot</h3>
+						<p>Kids will build a robot that follows a line on the ground! They'll learn about motors, sensors, and how to make their creation move on its own. This project combines mechanics and programming in a fun way.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--End Projects-->
+
+
+	<!--why choose-->
+	<section class="why-choos-lg pad-tb deep-dark" id="why-us">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="common-heading text-l">
+						<span>Why Choose Us</span>
+						<h2 class="mb20">Why <span class="text-second text-bold">Inventorz.AI</span> Stands Out Among
+							Leading Technical Skill Coaches.</h2>
+						<p>At Inventorz.AI, we believe that traditional education can be limiting and is outdated with no
+							impactful change. That's why we've reimagined learning to be hands-on, engaging, and truly
+							empowering. Our courses go beyond textbooks and lectures, offering a dynamic journey where
+							you learn by doing—building, experimenting, and creating with Arduino.</p>
+						<div class="itm-media-object mt40 tilt-3d">
+							<div class="media">
+								<div class="img-ab- base" data-tilt data-tilt-max="20" data-tilt-speed="1000"><img
+										src="images/icons/computers.svg" alt="icon" class="layer"></div>
+								<div class="media-body">
+									<h4>Project-Based Learning</h4>
+									<p>Learn while building. From basic circuits to advanced robotics, our project-based
+										approach ensures deeper understanding and engagement.</p>
+								</div>
+							</div>
+							<div class="media mt40">
+								<div class="img-ab- base" data-tilt data-tilt-max="20" data-tilt-speed="1000"><img
+										src="images/icons/worker.svg" alt="icon" class="layer"></div>
+								<div class="media-body">
+									<h4>Start Anytime, Anywhere</h4>
+									<p>Forget waiting for the curriculum to catch up. Dive into the world of electronics
+										and robotics at your own pace, regardless of age or academic level.</p>
+								</div>
+							</div>
+							<div class="media mt40">
+								<div class="img-ab- base" data-tilt data-tilt-max="20" data-tilt-speed="1000"> <img
+										src="images/icons/deal.svg" alt="icon" class="layer"></div>
+								<div class="media-body">
+									<h4>Live Classes with Real Support</h4>
+									<p>Unlike pre-recorded sessions that are done and dry, our live classes offer
+										interactive learning and real-time support. Got stuck? We're here to help every
+										step of the way. </p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div data-tilt data-tilt-max="5" data-tilt-speed="1000" class="single-image bg-shape-dez wow fadeIn"
+						data-wow-duration="2s"><img src="images/kit/main1.jpg" alt="image" class="img-fluid">
+					</div>
+					<p class="text-center mt30">With our special <b>electronics kits</b>, students dive deep into the
+						world of robotics and IoT, equipping them with skills that are crucial for the future.</p>
+					<div class="cta-card mt60 text-center">
+						<h3 class="mb20">Let&apos;s <span class="text-second text-bold">Ignite</span> Innovation
+							Together
+						</h3>
+						<p>Start Building the Future Today – Enroll Now in Our IoT & Robotics Course!</p>
+						<a href="https://labs.inventify.ae/collections/1333384" class="btn-outline lnk mt30">Level Up
+							Your Learning <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--End why choose-->
+
+	<!--Start About-->
+	<section style="padding-top: 5rem" class="service pad-tb bg-gradient5">
+		<div class="container">
+			<h1 style="text-align: center; margin-bottom: 4rem;">Discover the Ultimate Hands-On <br> <span
+					class="text-second text-bold">IoT & Robotics Kit!</span>
+			</h1>
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="single-image bg-shape-dez mt0 wow fadeIn">
+						<img src="images/kit/main2.jpg" alt="image" class="img-fluid no-shadow" />
+					</div>
+				</div>
+				<div class="col-lg-8 block-1 m-mt50">
+					<div class="common-heading text-l pl25">
+						<span>Overview</span>
+
+						<h2>Unlock Your Learning Potential with Our Exclusive Arduino Kits!</h2>
+						<p>Experience learning like never before with our specialized Arduino kits, perfect for our
+							hands-on AI and robotics courses. Explore the thrilling world of AI and robotics, where
+							theory meets practice and innovation comes to life!
+							<br><br>
+							Our kits include everything you need to experiment, create, and succeed, making complex
+							concepts easy and fun to understand.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--End About-->
+	<!--Start Key points-->
+	<section class="service pad-tb light-dark">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7">
+					<div class="text-l service-desc- pr25">
+						<h3 class="mb20">Why Choose Our Arduino Kits?</h3>
+						<p>Our course isn't just about watching videos or reading materials. It's about getting your
+							hands dirty and building real-world projects that enhance your understanding and skills. Our
+							Arduino kits are tailored to match each module, providing you with all the components you
+							need to succeed.</p>
+						<ul class="service-point-2 mt20">
+							<li># 30+ Projects</li>
+							<li># Interactive Learning Experience</li>
+							<li># Hands-on Learning</li>
+							<li># Skill Development</li>
+							<li># Tried and Tested</li>
+							<li># Quality Components</li>
+						</ul>
+						<a href="#" class="btn-main bg-btn2 lnk mt30">Buy
+							Now <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
+					</div>
+				</div>
+				<div class="col-lg-5">
+					<div class="single-image wow fadeIn">
+						<img src="images/kit/main3.jpg" alt="image" class="img-fluid no-shadow" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--End Key points-->
+
+	<!-- Start Comparison -->
+	<section style="margin: 0 8rem; max-width: 1200px; margin: 0 auto;">
+		<div class="common-heading ptag">
+			<span>OUR KITs</span>
+			<h2>KITs Pricing</h2>
+
+			<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: 1fr, 2fr; place-content: center; place-items: center;"
+				class="common-heading ptag">
+				<h2>Us</h2>
+				<h2 style="grid-row: span 2 / span 2; align-self: flex-start; margin-top: 1rem;">vs.</h2>
+				<h2>Others</h2>
+				<div
+					style="background: linear-gradient(to bottom, #ffede6 80%, #ffffff 100%); padding: 1.6rem; border-radius: 5px; width: min-content;">
+					<div style="margin-bottom: 3rem;">
+						<img style="height: 20rem; border-radius: 5px;" src="./images/kit/main4.jpg"
+							alt="Our Arduino Kit">
+					</div>
+					<div
+						style="display: flex; flex-direction: column; row-gap: .6rem; font-size: 1.3rem; margin-bottom: 2rem;">
+						<div style="text-align: left;" class="details">
+							<ul>
+								<li><i class="fa-solid fa-check"
+										style="color: #78dc78; margin-right: 10px; margin-bottom: 12px;"></i>100+
+									Projects</li>
+								<li><i class="fa-solid fa-check"
+										style="color: #78dc78; margin-right: 10px; margin-bottom: 12px;"></i>More
+									Significant Components</li>
+								<li><i class="fa-solid fa-check"
+										style="color: #78dc78; margin-right: 10px; margin-bottom: 12px;"></i>Wide Range
+									of Sensors
+								</li>
+								<li><i class="fa-solid fa-check"
+										style="color: #78dc78; margin-right: 10px; margin-bottom: 12px;"></i>Wide Range
+									of Output Devices</li>
+								<li><i class="fa-solid fa-check"
+										style="color: #78dc78; margin-right: 10px; margin-bottom: 12px;"></i>Follow
+									Along with our Course</li>
+								<li>
+									<i class="fa-solid fa-check"
+										style="color: #78dc78; margin-right: 10px; margin-bottom: 12px;"></i>Guided
+									Learning in our Course
+								</li>
+
+							</ul>
+						</div>
+					</div>
+					<a href="#" class="btn-main bg-btn lnk">$329.99
+						<span class="circle"></span></a>
+				</div>
+				<div
+					style="background: linear-gradient(to bottom, #e1f8ff 80%, #ffffff 100%); padding: 1.6rem; border-radius: 5px; width: min-content;">
+					<div style="margin-bottom: 3rem;">
+						<img style="height: 20rem; border-radius: 5px;" src="./images/comparison/other.png"
+							alt="Their Arduino Kit">
+					</div>
+					<div
+						style="display: flex; flex-direction: column; row-gap: .6rem; font-size: 1.3rem; margin-bottom: 2rem;">
+						<div style="text-align: left;" class="details">
+							<ul>
+								<li><i class="fa-solid fa-triangle-exclamation"
+										style="color: #ff9500; margin-right: 5px; margin-bottom: 12px;"></i>Limited
+									Projects
+								</li>
+								<li><i class="fa-solid fa-triangle-exclamation"
+										style="color: #ff9500; margin-right: 5px; margin-bottom: 12px;"></i>Limited
+									Significant Components
+								</li>
+								<li><i class="fa-solid fa-triangle-exclamation"
+										style="color: #ff9500; margin-right: 5px; margin-bottom: 12px;"></i>Limited
+									no.
+									of Sensors
+
+								</li>
+								<li><i class="fa-solid fa-triangle-exclamation"
+										style="color: #ff9500; margin-right: 5px; margin-bottom: 12px;"></i>Limited
+									no.
+									of Output Devices
+								</li>
+								<li>
+									<i class="fa-solid fa-xmark"
+										style="color: #ff0000; margin-right: 10px; margin-bottom: 12px;"></i>No Live
+									Course
+								</li>
+								<li>
+									<i class="fa-solid fa-xmark"
+										style="color: #ff0000; margin-right: 10px; margin-bottom: 12px;"></i>No
+									Guided
+									Learning
+								</li>
+
+							</ul>
+						</div>
+					</div>
+					<a href="#" class="btn-main bg-btn3 lnk">$599.99
+						<span class="circle"></span></a>
+				</div>
+			</div>
+			<div style="display: flex; flex-direction: row; justify-content: space-evenly; column-gap: 15rem;">
+
+			</div>
+
+		</div>
+
+	</section>
+	<!-- End Comparison -->
+
+
+
+	<!--Start reveiws-->
+	<!-- <section class="reviews-block pad-tb">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8">
+					<div class="common-heading ptag">
+						<span>Reviews</span>
+						<h2>Video Testimonials</h2>
+						<p class="mb30">Check our students success stories.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 mt30">
+					<div class="reviews-card pr-shadow">
+						<div class="review-video- mb20">
+							<div class="video-review">
+								<a class="video-link"
+									href="https://www.youtube.com/watch?v=SZEflIVnhH8?autoplay=1&amp;rel=0"><img
+										src="images/client/client-pic-a.jpg" alt="client" class="img-fluid">
+									<div class="review-vid-details">
+										<div class="-vid-ico"><span class="triangle-play2"></span></div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="-client-details-">
+							<div class="reviewer-text">
+								<h4>Azaan</h4>
+								<p>Student, <small>Sharjah, UAE</small></p>
+								<div class="star-rate">
+									<ul>
+										<li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star"
+													aria-hidden="true"></i></a> </li>
+										<li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star"
+													aria-hidden="true"></i></a> </li>
+										<li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star"
+													aria-hidden="true"></i></a> </li>
+										<li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star"
+													aria-hidden="true"></i></a> </li>
+										<li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star"
+													aria-hidden="true"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 mt30">
+					<div class="reviews-card pr-shadow">
+						<div class="review-video- mb20">
+							<div class="video-review">
+								<a class="video-link"
+									href="https://www.youtube.com/watch?v=SZEflIVnhH8?autoplay=1&amp;rel=0"><img
+										src="images/client/client-pic-a.jpg" alt="client" class="img-fluid">
+									<div class="review-vid-details">
+										<div class="-vid-ico"><span class="triangle-play2"></span></div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="-client-details-">
+							<div class="reviewer-text">
+								<h4>Khaleelulla Khan</h4>
+								<p>Parent, <small>Damam,Saudi Arabia</small></p>
+								<div class="star-rate">
+									<ul>
+										<li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star"
+													aria-hidden="true"></i></a> </li>
+										<li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star"
+													aria-hidden="true"></i></a> </li>
+										<li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star"
+													aria-hidden="true"></i></a> </li>
+										<li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star"
+													aria-hidden="true"></i></a> </li>
+										<li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star"
+													aria-hidden="true"></i></a> </li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 mt30">
+					<div class="reviews-card pr-shadow">
+						<div class="review-video- mb20">
+							<div class="video-review">
+								<a class="video-link"
+									href="https://www.youtube.com/watch?v=SZEflIVnhH8?autoplay=1&amp;rel=0"><img
+										src="images/client/client-pic-a.jpg" alt="client" class="img-fluid">
+									<div class="review-vid-details">
+										<div class="-vid-ico"><span class="triangle-play2"></span></div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="-client-details-">
+							<div class="reviewer-text">
+								<h4>Ibraheem</h4>
+								<p>Student, <small>Jeddah,Saudi Arabia</small></p>
+								<div class="star-rate">
+									<ul>
+										<li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star"
+													aria-hidden="true"></i></a> </li>
+										<li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star"
+													aria-hidden="true"></i></a> </li>
+										<li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star"
+													aria-hidden="true"></i></a> </li>
+										<li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star"
+													aria-hidden="true"></i></a> </li>
+										<li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star"
+													aria-hidden="true"></i></a> </li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<!--End reviews-->
+
+	<!--Start Portfolio
+<section class="portfolio-section pad-tb" id="work">
+<div class="container">
+<div class="row justify-content-center ">
+<div class="col-lg-8">
+<div class="common-heading">
+<span>Our Work</span>
+<h2 class="mb0">Our Latest Creative Work</h2>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-8 col-sm-8 mt60 wow fadeInUp" data-wow-delay="0.2s">
+<div class="isotope_item hover-scale">
+<div class="item-image" data-tilt data-tilt-max="2" data-tilt-speed="1000">
+<a href="#"><img src="images/portfolio/image-d.jpg" alt="image" class="img-fluid" /> </a>
+</div>
+<div class="item-info">
+<h4><a href="#">Ecommerce Development</a></h4>
+<p>Web Application</p>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-sm-4 mt60 wow fadeInUp" data-wow-delay="0.4s">
+<div class="isotope_item hover-scale">
+<div class="item-image" data-tilt data-tilt-max="2" data-tilt-speed="1000">
+<a href="#"><img src="images/portfolio/image-1.jpg" alt="image" class="img-fluid" /> </a>
+</div>
+<div class="item-info">
+<h4><a href="#">Creative App</a></h4>
+<p>iOs, Android</p>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-sm-4 mt60 wow fadeInUp" data-wow-delay="0.6s">
+<div class="isotope_item hover-scale">
+<div class="item-image" data-tilt data-tilt-max="2" data-tilt-speed="1000">
+<a href="#"><img src="images/portfolio/image-6.jpg" alt="image" class="img-fluid" /> </a>
+</div>
+<div class="item-info">
+<h4><a href="#">Brochure Design</a></h4>
+<p>Graphic, Print</p>
+</div>
+</div>
+</div>
+<div class="col-lg-8 col-sm-8 mt60 wow fadeInUp" data-wow-delay="0.8s">
+<div class="isotope_item hover-scale">
+<div class="item-image" data-tilt data-tilt-max="2" data-tilt-speed="1000">
+<a href="#"><img src="images/portfolio/image-c.jpg" alt="image" class="img-fluid" /> </a>
+</div>
+<div class="item-info">
+<h4><a href="#">Icon Pack</a></h4>
+<p>iOs, Android</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+   End Portfolio-->
+
+	<!--Start Clients
+<section class="clients-section- bg-gradient15 pad-tb" id="clients">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-8">
+<div class="common-heading">
+<span>Our happy customers</span>
+<h2 class="mb30">Some of our Clients</h2>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-12">
+<div class="clients-logos text-center col-12">
+<ul class="row text-center clearfix">
+<li class="col-lg-2 col-md-3 col-sm-4 col-6 wow fadeIn" data-wow-delay=".2s">
+<div class="brand-logo"><img src="images/client/clients-1.png" alt="clients" class="img-fluid"></div>
+<p>Shutter, USA</p>
+</li>
+<li class="col-lg-2 col-md-3 col-sm-4 col-6 wow fadeIn" data-wow-delay=".4s">
+<div class="brand-logo"><img src="images/client/clients-2.png" alt="clients" class="img-fluid"></div>
+<p>Hipster, USA</p>
+</li>
+<li class="col-lg-2 col-md-3 col-sm-4 col-6 wow fadeIn" data-wow-delay=".6s">
+<div class="brand-logo"><img src="images/client/clients-3.png" alt="clients" class="img-fluid"></div>
+<p>Happy, USA</p>
+</li>
+<li class="col-lg-2 col-md-3 col-sm-4 col-6 wow fadeIn" data-wow-delay=".8s">
+<div class="brand-logo"><img src="images/client/clients-4.png" alt="clients" class="img-fluid"></div>
+<p>Opera Tours, USA</p>
+</li>
+<li class="col-lg-2 col-md-3 col-sm-4 col-6 wow fadeIn" data-wow-delay="1s">
+<div class="brand-logo"><img src="images/client/clients-5.png" alt="clients" class="img-fluid"></div>
+<p>Royale Stone, UK</p>
+</li>
+<li class="col-lg-2 col-md-3 col-sm-4 col-6 wow fadeIn" data-wow-delay="1.2s">
+<div class="brand-logo"><img src="images/client/clients-6.png" alt="clients" class="img-fluid"></div>
+<p>QTP, Australia</p>
+</li>
+<li class="col-lg-2 col-md-3 col-sm-4 col-6 wow fadeIn" data-wow-delay="1.4s">
+<div class="brand-logo"><img src="images/client/clients-7.png" alt="clients" class="img-fluid"></div>
+<p>PAPA, Malaysia</p>
+</li>
+<li class="col-lg-2 col-md-3 col-sm-4 col-6 wow fadeIn" data-wow-delay="1.6s">
+<div class="brand-logo"><img src="images/client/clients-8.png" alt="clients" class="img-fluid"></div>
+<p>Coffee, Australia</p>
+</li>
+<li class="col-lg-2 col-md-3 col-sm-4 col-6 wow fadeIn" data-wow-delay="1.8s">
+<div class="brand-logo"><img src="images/client/clients-9.png" alt="clients" class="img-fluid"></div>
+<p>Bakery, India</p>
+</li>
+<li class="col-lg-2 col-md-3 col-sm-4 col-6 wow fadeIn" data-wow-delay="2s">
+<div class="brand-logo"><img src="images/client/clients-10.png" alt="clients" class="img-fluid"></div>
+<p>Iconico, India</p>
+</li>
+<li class="col-lg-2 col-md-3 col-sm-4 col-6 wow fadeIn" data-wow-delay="2.2s">
+<div class="brand-logo"><img src="images/client/clients-11.png" alt="clients" class="img-fluid"></div>
+<p>Tom N Jerry, UK</p>
+</li>
+<li class="col-lg-2 col-md-3 col-sm-4 col-6 wow fadeIn" data-wow-delay="2.4s">
+<div class="brand-logo"><img src="images/client/clients-12.png" alt="clients" class="img-fluid"></div>
+<p>Arch, India</p>
+</li>
+<li class="col-lg-2 col-md-3 col-sm-4 col-6 wow fadeIn" data-wow-delay="2.6s">
+<div class="brand-logo"><img src="images/client/clients-13.png" alt="clients" class="img-fluid"></div>
+<p>Aro Group, India</p>
+</li>
+<li class="col-lg-2 col-md-3 col-sm-4 col-6 wow fadeIn" data-wow-delay="2.8s">
+<div class="brand-logo"><img src="images/client/clients-14.png" alt="clients" class="img-fluid"></div>
+<p>Tom Group, India</p>
+</li>
+<li class="col-lg-2 col-md-3 col-sm-4 col-6 wow fadeIn" data-wow-delay="3s">
+<div class="brand-logo"><img src="images/client/clients-4.png" alt="clients" class="img-fluid"></div>
+<p>Premier Pipes, India</p>
+</li>
+<li class="col-lg-2 col-md-3 col-sm-4 col-6 wow fadeIn" data-wow-delay="3.2s">
+<div class="brand-logo"><img src="images/client/clients-1.png" alt="clients" class="img-fluid"></div>
+<p>Dynamic, India</p>
+</li>
+<li class="col-lg-2 col-md-3 col-sm-4 col-6 wow fadeIn" data-wow-delay="3.4s">
+<div class="brand-logo"><img src="images/client/clients-7.png" alt="clients" class="img-fluid"></div>
+<p>Fns Inc, India</p>
+</li>
+<li class="col-lg-2 col-md-3 col-sm-4 col-6 wow fadeIn" data-wow-delay="3.6s">
+<div class="brand-logo"><img src="images/client/clients-2.png" alt="clients" class="img-fluid"></div>
+<p>RP School, India</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+End Clients-->
+
+	<!--Start Badges-->
+
+	<section class="badges-section bg-gradient5  pad-tb" id="achievements">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8">
+					<div class="common-heading w-tdxt">
+						<span>OUR ACHIEVEMENTS</span>
+						<h2><span class="text-radius text-light text-animation bg-b">It&apos;s Proven!</span> <br>
+							Inspiring Achievements of our <br> Past Students</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-6 wow fadeIn" data-wow-delay=".2s">
+					<div class="badges-content">
+						<img src="images/about/badges-a.png" alt="budges" class="img-fluid">
+						<p>1st Prize in DEWA AI Championship</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-6 wow fadeIn" data-wow-delay=".4s">
+					<div class="badges-content">
+						<img src="images/about/badges-b.png" alt="budges" class="img-fluid">
+						<p>1st Prize GMU MASE (Twice)
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-6 wow fadeIn" data-wow-delay=".6s">
+					<div class="badges-content">
+						<img src="images/about/badges-c.png" alt="budges" class="img-fluid">
+						<p>1st Prize in MakeX UAE</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-6 wow fadeIn" data-wow-delay=".8s">
+					<div class="badges-content">
+						<img src="images/about/badges-d.png" alt="budges" class="img-fluid">
+						<p>IIT Delhi GCC Competition</p>
+					</div>
+				</div>
+			</div>
+			<div class="-cta-btn mt70">
+				<div class="free-cta-title v-center wow fadeInUp" data-wow-delay="1s">
+
+					<!-- 
+		<p>We <span>Promise.</span> We <span>Deliver.</span></p> -->
+					<a href="https://labs.inventify.ae/collections/1333384" class="btn-main bg-btn2 lnk">Unleash Your
+						Potential <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--End Badges-->
+
+	<!--Start CTA-->
+	<section class="cta-area pad-tb">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8">
+					<div class="common-heading">
+						<span>Build. Learn. Innovate.</span>
+						<h2>Create, Innovate, Elevate</h2>
+						<a href="https://labs.inventify.ae/collections/1333384" class="btn-outline">Start Your Journey
+							<i class="fas fa-chevron-right fa-icon"></i></a>
+						<!-- <p class="cta-call">Or call us now <a href="tel:+971 55 566 8121"><i class="fas fa-phone-alt"></i> +971 55 566 8121</a></p> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="shape shape-a1"><img src="images/shape/shape-3.svg" alt="shape"></div>
+		<div class="shape shape-a2"><img src="images/shape/shape-4.svg" alt="shape"></div>
+		<div class="shape shape-a3"><img src="images/shape/shape-13.svg" alt="shape"></div>
+		<div class="shape shape-a4"><img src="images/shape/shape-11.svg" alt="shape"></div>
+	</section>
+	<!--End CTA-->
+
+
+	<div class="footer-row2">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-lg-3 col-sm-6  ftr-brand-pp">
+					<a class="navbar-brand mt30 mb25" href="index.html"> <img src="images/inventify.png" alt="Logo"
+							width="100" /></a>
+					<p>Contact us if you have any other additional queries.</p>
+					<a href="https://learn.inventorz.ai/" class="btn-main bg-btn3 lnk mt20">Contact Us <i
+							class="fas fa-chevron-right fa-icon"></i><span class="circle"></ span></a>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<h5>Contact Us</h5>
+					<ul class="footer-address-list ftr-details">
+						<li>
+							<span><i class="fas fa-envelope "></i></span>
+							<p>Email <span> <a href="info@inventorz.ai">info@inventorz.ai</a></span></p>
+						</li>
+						<li>
+							<span><i class="fas fa-phone-alt"></i></span>
+							<p>Phone <span>
+									<span class="footer-phone-my">
+										<a href="tel:+971555668121">+971 55 566 8121</a>
+										<a href="tel:+1(614)592-1372">+1 (614) 592-1372</a>
+										<a href="tel:+971504496595">+971 50 449 6595</a>
+									</span>
+
+								</span></p>
+						</li>
+						<li>
+							<span><i class="fas fa-map-marker-alt"></i></span>
+							<p>Address <span>Al Meydan, Dubai</span></p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-sm-6">
+					<h5>Company</h5>
+					<ul class="footer-address-list link-hover">
+						<li><a href="https://learn.inventorz.ai/">Contact</a></li>
+						<li><a href="javascript:void(0)">Customer's FAQ</a></li>
+						<li><a href="javascript:void(0)">Refund Policy</a></li>
+						<li><a href="javascript:void(0)">Privacy Policy</a></li>
+						<li><a href="javascript:void(0)">Terms and Conditions</a></li>
+						<li><a href="javascript:void(0)">License & Copyright</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+	<div class="footer-brands">
+		<div class="container">
+			<div class="row">
+				<!--
+<div class="col-lg-4 v-center">
+<h5 class="mb10">Top App Development Companies</h5>
+<p>News letter dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Enter your email</p>
+</div> 
+<div class="col-lg-8 v-center">
+<ul class="footer-badges-">
+<li><a href="#"><img src="images/about/badges-a.png" alt="badges"></a></li>
+<li><a href="#"><img src="images/about/badges-b.png" alt="badges"></a></li>
+<li><a href="#"><img src="images/about/badges-c.png" alt="badges"></a></li>
+<li><a href="#"><img src="images/about/badges-d.png" alt="badges"></a></li>
+</ul> -->
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="footer-row3">
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="footer-social-media-icons">
+							<!-- <a href="javascript:void(0)" target="blank"><i class="fab fa-facebook"></i></a>
+ <a href="javascript:void(0)" target="blank"><i class="fab fa-twitter"></i></a> -->
+							<a href="https://www.instagram.com/inventify.robotics/" target="blank"><i
+									class="fab fa-instagram"></i></a>
+							<!-- <a href="javascript:void(0)" target="blank"><i class="fab fa-linkedin"></i></a>-->
+							<a href="https://www.youtube.com/channel/UC1DDe06Fw6-HASqSJ5krQvg" target="blank"><i
+									class="fab fa-youtube"></i></a>
+							<!-- <a href="javascript:void(0)" target="blank"><i class="fab fa-pinterest-p"></i></a>
+<a href="javascript:void(0)" target="blank"><i class="fab fa-vimeo-v"></i></a>
+<a href="javascript:void(0)" target="blank"><i class="fab fa-dribbble"></i></a>
+<a href="javascript:void(0)" target="blank"><i class="fab fa-behance"></i></a> -->
+						</div>
+						<div class="footer-">
+							<p>Copyright © 2024 Inventorz.AI. All rights reserved.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</footer>
+	<!--End Footer-->
+
+	<!-- js placed at the end of the document so the pages load faster -->
+	<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/plugin.min.js"></script>
+	<script src="js/preloader.js"></script>
+	<script src="https://kit.fontawesome.com/2ae0102bf2.js" crossorigin="anonymous"></script>
+	<!--common script file-->
+	<script src="js/main.js"></script>
+	<script>
+		// Countdown Timer
+		function updateCountdown() {
+			const targetDate = new Date('2025-03-30T00:00:00');
+			const now = new Date();
+			const difference = targetDate - now;
+
+			const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+			const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+			const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+			document.getElementById('days').textContent = String(days).padStart(2, '0');
+			document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+			document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+			document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+
+			if (difference < 0) {
+				clearInterval(countdownInterval);
+				document.querySelector('.countdown-timer').innerHTML = '<h3>Registration Closed</h3>';
+			}
+		}
+
+		const countdownInterval = setInterval(updateCountdown, 1000);
+		updateCountdown();
+
+		// 3D Form Effect
+		const form = document.getElementById('registrationForm');
+		const maxRotation = 10; // Maximum rotation in degrees
+
+		form.addEventListener('mousemove', (e) => {
+			const rect = form.getBoundingClientRect();
+			const x = e.clientX - rect.left;
+			const y = e.clientY - rect.top;
+			
+			const centerX = rect.width / 2;
+			const centerY = rect.height / 2;
+			
+			const rotateX = (y - centerY) / centerY * maxRotation;
+			const rotateY = (centerX - x) / centerX * maxRotation;
+			
+			form.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+		});
+
+		form.addEventListener('mouseleave', () => {
+			form.style.transform = 'perspective(1000px) rotateX(0) rotateY(0)';
+		});
+	</script>
+	<!--End Script-->
+</body>
+
+</html>
