@@ -28,7 +28,7 @@
 		}
 		.maincolour {
 			background: linear-gradient(45deg, #fbcb50 0%, #d87297 50%, #e36658 100%);
-			-webkit-background-clip: text;
+			background-clip: text;
 			-webkit-text-fill-color: transparent;
 		}
 		@keyframes fadeInDown {
@@ -239,7 +239,9 @@
 									<div class="col-md-6"><input type="text" placeholder="First Name" name="firstName" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px;"></div>
 									<div class="col-md-6"><input type="text" placeholder="Last Name" name="lastName" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px;"></div>
 									<div class="col-md-12"><input type="email" placeholder="Email Address" name="email" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px;"></div>
-									<div class="col-md-12"><input type="tel" placeholder="Phone Number" name="phone" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px;"></div>
+									<div class="col-md-12"><input type="tel" placeholder="Phone Number" name="phone" required 
+											style="width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px; background: white; font-size: 14px; transition: border-color 0.3s ease;">
+									</div>
 								</div>
 								<div class="fieldsets mt40">
 									<button type="submit" name="submit" class="lnk btn-main bg-btn" style="font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;">Submit <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></button>
@@ -267,7 +269,9 @@
 									<span class="small-text" style="color: white; animation: fadeInDown 1s ease-out 0.2s; animation-fill-mode: both;">AI & ROBOTICS</span>
 									<span class="small-text" style="color: white; animation: fadeInDown 1s ease-out 0.4s; animation-fill-mode: both;">WORKSHOP</span>
 								</h1>
-								<p style="text-align: left; color: white; animation: fadeInLeft 1s ease-out 0.6s; animation-fill-mode: both;">50 seats left! book your spot now</p>
+								<p style="text-align: left; color: white; animation: fadeInLeft 1s ease-out 0.6s; animation-fill-mode: both;">
+									<span id="seatsLeft" style="font-size: 1.5rem; font-weight: bold; margin-right: 8px;">50</span>seats left! book your spot now
+								</p>
 								<div class="countdown-timer wow fadeInUp" data-wow-delay=".5s" style="justify-content: flex-start; background: rgba(128, 128, 128, 0.3); padding: 20px; border-radius: 12px; gap: 20px; animation: fadeInUp 1s ease-out 0.8s; animation-fill-mode: both;">
 									<div class="countdown-item">
 										<span id="days" style="color: white; font-size: 2.5rem; font-weight: bold;">00</span>
@@ -299,17 +303,32 @@
 						</div>
 					</div>
 					<div class="col-lg-6">
-						<div class="form-block fdgn2 mt10 mb10" style="background: white; padding: 20px; border-radius: 8px; transform-style: preserve-3d; transition: transform 0.3s ease-out;" id="registrationForm">
+						<div class="form-block fdgn2 mt10 mb10" style="background: white; padding: 20px; border-radius: 8px; transition: transform 0.3s ease-out; transform-style: preserve-3d; perspective: 1000px;" id="registrationForm">
 							<h3 class="text-center mb30" style="color: #000;">Registration Form</h3>
-							<form action="https://learn.inventorz.ai/" method="post" name="registration-form">
+							<form action="https://learn.inventorz.ai/" method="post" name="registration-form" id="workshopRegistrationForm">
 								<div class="fieldsets row">
-									<div class="col-md-6"><input type="text" placeholder="First Name" name="firstName" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px; background: white;"></div>
-									<div class="col-md-6"><input type="text" placeholder="Last Name" name="lastName" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px; background: white;"></div>
-									<div class="col-md-12"><input type="email" placeholder="Email Address" name="email" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px; background: white;"></div>
-									<div class="col-md-12"><input type="tel" placeholder="Phone Number" name="phone" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px; background: white;"></div>
+									<div class="col-md-6">
+										<input type="text" placeholder="First Name" name="firstName" required 
+											style="width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px; background: white; font-size: 14px; transition: border-color 0.3s ease;">
+									</div>
+									<div class="col-md-6">
+										<input type="text" placeholder="Last Name" name="lastName" required 
+											style="width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px; background: white; font-size: 14px; transition: border-color 0.3s ease;">
+									</div>
+									<div class="col-md-12">
+										<input type="email" placeholder="Email Address" name="email" required 
+											style="width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px; background: white; font-size: 14px; transition: border-color 0.3s ease;">
+									</div>
+									<div class="col-md-12">
+										<input type="tel" placeholder="Phone Number" name="phone" required 
+											style="width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px; background: white; font-size: 14px; transition: border-color 0.3s ease;">
+									</div>
 								</div>
 								<div class="fieldsets mt40">
-									<button type="submit" name="submit" class="lnk btn-main bg-btn" style="font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;">Submit <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></button>
+									<button type="submit" name="submit" class="lnk btn-main bg-btn" 
+										style="font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif; width: 100%; padding: 12px; font-size: 18px; font-weight: 600;">
+										Submit <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span>
+									</button>
 								</div>
 							</form>
 						</div>
@@ -1268,55 +1287,144 @@ End Clients-->
 	<script src="js/plugin.min.js"></script>
 	<script src="js/preloader.js"></script>
 	<script src="https://kit.fontawesome.com/2ae0102bf2.js" crossorigin="anonymous"></script>
+	<!-- Add Supabase -->
+	<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 	<!--common script file-->
 	<script src="js/main.js"></script>
 	<script>
-		// Countdown Timer
-		function updateCountdown() {
-			const targetDate = new Date('2025-03-30T00:00:00');
-			const now = new Date();
-			const difference = targetDate - now;
+		// Initialize Supabase client
+		const supabaseUrl = 'https://vlezggeimooljrgimapg.supabase.co'
+		const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZsZXpnZ2VpbW9vbGpyZ2ltYXBnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDI4MjEwNjQsImV4cCI6MjA1ODM5NzA2NH0.KcXBXUFLaO3B2KBBcU2_mbnExgBipuJstgBv6qZbojE'
+		const supabase = supabase.createClient(supabaseUrl, supabaseKey)
 
-			const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-			const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-			const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-			const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+		// Function to get current seats
+		async function getCurrentSeats() {
+			try {
+				console.log('Fetching current seats...')
+				const { data, error } = await supabase
+					.from('seats')
+					.select('available_seats')
+					.single()
 
-			document.getElementById('days').textContent = String(days).padStart(2, '0');
-			document.getElementById('hours').textContent = String(hours).padStart(2, '0');
-			document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
-			document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
-
-			if (difference < 0) {
-				clearInterval(countdownInterval);
-				document.querySelector('.countdown-timer').innerHTML = '<h3>Registration Closed</h3>';
+				if (error) {
+					console.error('Error fetching seats:', error)
+					throw error
+				}
+				console.log('Current seats:', data.available_seats)
+				return data.available_seats
+			} catch (error) {
+				console.error('Error in getCurrentSeats:', error)
+				return 50 // Fallback value
 			}
 		}
 
-		const countdownInterval = setInterval(updateCountdown, 1000);
-		updateCountdown();
+		// Function to update seats
+		async function updateSeats() {
+			try {
+				console.log('Updating seats...')
+				const { data, error } = await supabase
+					.from('seats')
+					.update({ available_seats: supabase.raw('available_seats - 1') })
+					.eq('id', 1)
+					.select()
+					.single()
 
-		// 3D Form Effect
-		const form = document.getElementById('registrationForm');
-		const maxRotation = 10; // Maximum rotation in degrees
+				if (error) {
+					console.error('Error updating seats:', error)
+					throw error
+				}
+				console.log('Updated seats:', data.available_seats)
+				return data.available_seats
+			} catch (error) {
+				console.error('Error in updateSeats:', error)
+				return null
+			}
+		}
 
-		form.addEventListener('mousemove', (e) => {
-			const rect = form.getBoundingClientRect();
-			const x = e.clientX - rect.left;
-			const y = e.clientY - rect.top;
-			
-			const centerX = rect.width / 2;
-			const centerY = rect.height / 2;
-			
-			const rotateX = (y - centerY) / centerY * maxRotation;
-			const rotateY = (centerX - x) / centerX * maxRotation;
-			
-			form.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-		});
+		// Initialize seats count when page loads
+		document.addEventListener('DOMContentLoaded', async () => {
+			console.log('Page loaded, initializing seats count...')
+			const seatsLeftElement = document.getElementById('seatsLeft')
+			const currentSeats = await getCurrentSeats()
+			seatsLeftElement.textContent = currentSeats
+		})
 
-		form.addEventListener('mouseleave', () => {
-			form.style.transform = 'perspective(1000px) rotateX(0) rotateY(0)';
-		});
+		// Form Validation
+		document.getElementById('workshopRegistrationForm').addEventListener('submit', async function(e) {
+			e.preventDefault()
+			console.log('Form submitted...')
+			
+			// Basic form validation
+			const inputs = this.querySelectorAll('input[required], select[required]')
+			let isValid = true
+			
+			inputs.forEach(input => {
+				if (!input.value.trim()) {
+					isValid = false
+					input.style.borderColor = '#ff4444'
+					input.style.boxShadow = '0 0 5px rgba(255, 68, 68, 0.2)'
+				} else {
+					input.style.borderColor = '#ddd'
+					input.style.boxShadow = 'none'
+				}
+			})
+			
+			if (isValid) {
+				try {
+					console.log('Form is valid, updating seats...')
+					// Update seats in Supabase
+					const newSeatsCount = await updateSeats()
+					
+					if (newSeatsCount !== null) {
+						console.log('Seats updated successfully:', newSeatsCount)
+						// Update the display
+						const seatsLeftElement = document.getElementById('seatsLeft')
+						seatsLeftElement.textContent = newSeatsCount
+						
+						// Add animation effect
+						seatsLeftElement.style.transform = 'scale(1.2)'
+						setTimeout(() => {
+							seatsLeftElement.style.transform = 'scale(1)'
+						}, 200)
+
+						// Store registration data
+						const formData = {
+							first_name: this.querySelector('[name="firstName"]').value,
+							last_name: this.querySelector('[name="lastName"]').value,
+							email: this.querySelector('[name="email"]').value,
+							phone: this.querySelector('[name="phone"]').value,
+							registration_date: new Date().toISOString()
+						}
+
+						console.log('Storing registration data:', formData)
+						const { error: registrationError } = await supabase
+							.from('registrations')
+							.insert([formData])
+
+						if (registrationError) {
+							console.error('Error storing registration:', registrationError)
+							throw registrationError
+						}
+
+						console.log('Registration successful!')
+						alert('Thank you for registering! We will contact you shortly.')
+						this.reset()
+					} else {
+						console.log('No seats available')
+						alert('Sorry, no seats available.')
+					}
+				} catch (error) {
+					console.error('Error during registration:', error)
+					alert('An error occurred during registration. Please try again.')
+				}
+			} else {
+				console.log('Form validation failed')
+				alert('Please fill in all required fields.')
+			}
+		})
+
+		// Add transition effect for the seats counter
+		document.getElementById('seatsLeft').style.transition = 'transform 0.2s ease-out'
 	</script>
 	<!--End Script-->
 </body>
