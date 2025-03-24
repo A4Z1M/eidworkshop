@@ -1372,6 +1372,41 @@ End Clients-->
 		const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZsZXpnZ2VpbW9vbGpyZ2ltYXBnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDI4MjEwNjQsImV4cCI6MjA1ODM5NzA2NH0.KcXBXUFLaO3B2KBBcU2_mbnExgBipuJstgBv6qZbojE'
 		const supabaseClient = supabase.createClient(supabaseUrl, supabaseKey)
 
+        // Function to initialize the seats table if it doesn't exist
+        async function initializeSeatsTable() {
+            try {
+                console.log('Checking if seats table needs initialization...')
+                
+                // First check if the table has any data
+                const { data, error } = await supabaseClient
+                    .from('seats')
+                    .select('*')
+                
+                if (error) {
+                    console.error('Error checking seats table:', error)
+                    return
+                }
+                
+                // If no data or empty array, insert initial data
+                if (!data || data.length === 0) {
+                    console.log('Initializing seats table with 50 seats...')
+                    const { error: insertError } = await supabaseClient
+                        .from('seats')
+                        .insert([{ id: 1, available_seats: 50 }])
+                    
+                    if (insertError) {
+                        console.error('Error initializing seats table:', insertError)
+                    } else {
+                        console.log('Seats table initialized successfully')
+                    }
+                } else {
+                    console.log('Seats table already has data:', data)
+                }
+            } catch (error) {
+                console.error('Error in initializeSeatsTable:', error)
+            }
+        }
+
 		// Function to get current seats
 		async function getCurrentSeats() {
 			try {
@@ -1379,12 +1414,19 @@ End Clients-->
 				const { data, error } = await supabaseClient
 					.from('seats')
 					.select('available_seats')
+					.eq('id', 1)
 					.single()
 
 				if (error) {
 					console.error('Error fetching seats:', error)
 					throw error
 				}
+                
+                if (!data) {
+                    console.log('No data found, returning default 50')
+                    return 50 // Fallback value
+                }
+				
 				console.log('Current seats:', data.available_seats)
 				return data.available_seats
 			} catch (error) {
@@ -1393,32 +1435,49 @@ End Clients-->
 			}
 		}
 
-		// Function to update seats
-		async function updateSeats() {
-			try {
-				console.log('Updating seats...')
-				const { data, error } = await supabaseClient
-					.from('seats')
-					.update({ available_seats: supabaseClient.raw('available_seats - 1') })
-					.eq('id', 1)
-					.select()
-					.single()
+        // Function to update seats - FIXED to not use .raw() method
+        async function updateSeats() {
+            try {
+                console.log('Updating seats...')
+                
+                // First get the current seats count
+                const currentSeats = await getCurrentSeats()
+                
+                if (currentSeats <= 0) {
+                    console.log('No seats available to update')
+                    return 0
+                }
+                
+                // Update with new count (subtract 1)
+                const newCount = currentSeats - 1
+                
+                const { data, error } = await supabaseClient
+                    .from('seats')
+                    .update({ available_seats: newCount })
+                    .eq('id', 1)
+                    .select()
+                    .single()
 
-				if (error) {
-					console.error('Error updating seats:', error)
-					throw error
-				}
-				console.log('Updated seats:', data.available_seats)
-				return data.available_seats
-			} catch (error) {
-				console.error('Error in updateSeats:', error)
-				return null
-			}
-		}
+                if (error) {
+                    console.error('Error updating seats:', error)
+                    throw error
+                }
+                
+                console.log('Updated seats:', data.available_seats)
+                return data.available_seats
+            } catch (error) {
+                console.error('Error in updateSeats:', error)
+                return null
+            }
+        }
 
 		// Initialize seats count when page loads
 		document.addEventListener('DOMContentLoaded', async () => {
 			console.log('Page loaded, initializing seats count...')
+            
+            // First make sure the table is initialized
+            await initializeSeatsTable()
+            
 			const seatsLeftElement = document.getElementById('seatsLeft')
 			const currentSeats = await getCurrentSeats()
 			seatsLeftElement.textContent = currentSeats
@@ -1447,6 +1506,17 @@ End Clients-->
 			if (isValid) {
 				try {
 					console.log('Form is valid, updating seats...')
+                    
+                    // Get current seats before updating
+                    const currentSeats = await getCurrentSeats()
+                    console.log('Current seats before update:', currentSeats)
+                    
+                    if (currentSeats <= 0) {
+                        console.log('No seats available')
+                        alert('Sorry, no seats available.')
+                        return
+                    }
+                    
 					// Update seats in Supabase
 					const newSeatsCount = await updateSeats()
 
@@ -1485,8 +1555,8 @@ End Clients-->
 						alert('Thank you for registering! We will contact you shortly.')
 						this.reset()
 					} else {
-						console.log('No seats available')
-						alert('Sorry, no seats available.')
+                        console.log('Failed to update seats')
+                        alert('Sorry, an error occurred during registration. Please try again.')
 					}
 				} catch (error) {
 					console.error('Error during registration:', error)
