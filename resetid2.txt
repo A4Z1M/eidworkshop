@@ -1,0 +1,5 @@
+-- First, check the current sequence value
+SELECT nextval('registrations_id_seq');
+
+-- Then reset it to start from 1
+ALTER SEQUENCE registrations_id_seq RESTART WITH 1;
